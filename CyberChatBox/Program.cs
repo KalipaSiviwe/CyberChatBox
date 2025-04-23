@@ -8,9 +8,9 @@ class Program
     {
         AudioPlayer audioplayer = new AudioPlayer();
         audioplayer.PlayGreeting("AudioFile/Greeting.wav");
-       // AudioPlayer.PlayGreeting();
+        
         ImageDisplay.DisplayAsciiArt();
-        var userName = Greetings.GreetUser();  // fixed class name
+        var userName = Greetings.GreetUser();  
 
         ChatBotData userData = new ChatBotData { UserName = userName };
 
