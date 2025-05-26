@@ -8,18 +8,19 @@ class Program
     {
         AudioPlayer audioplayer = new AudioPlayer();
         audioplayer.PlayGreeting("AudioFile/Greeting.wav");
-        
+
         ImageDisplay.DisplayAsciiArt();
-        var userName = Greetings.GreetUser();  
+        var userName = Greetings.GreetUser();
 
         ChatBotData userData = new ChatBotData { UserName = userName };
 
-        RunBot();
+        RunBot(userData);
     }
 
-    static void RunBot()
+    static void RunBot(ChatBotData userData)
     {
         string input;
+        string lastResponse = null;
         while (true)
         {
             input = Utils.GetInput();
@@ -32,8 +33,9 @@ class Program
 
             if (input == "exit") break;
 
-            string response = Library.GetResponse(input);
-            Utils.PrintResponse(response);
+            string response = Library.GetResponse(input, userData);
+            Utils.PrintBotResponse(response);
+            lastResponse = response;
         }
 
         MenuDisplay.ShowExitMessage();

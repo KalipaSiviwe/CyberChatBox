@@ -12,4 +12,11 @@ public class Utils
     {
         Console.WriteLine(response);
     }
+
+    public static void PrintBotResponse(string response)
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine(response);
+        Console.ResetColor();
+    }
 }
