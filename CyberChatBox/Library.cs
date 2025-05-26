@@ -5,7 +5,10 @@ public class Library
 {
     private static readonly Dictionary<string, List<string>> keywordResponses = new Dictionary<string, List<string>>(StringComparer.OrdinalIgnoreCase)
     {
-        
+        { "password", new List<string> {
+            "Make sure to use strong, unique passwords for each account. Avoid using personal details in your passwords.",
+            "Consider using a password manager to keep your passwords safe and unique.",
+            "Change your passwords regularly and never share them with anyone." } },
         { "scam", new List<string> {
             "Be cautious of emails asking for personal information. Scammers often disguise themselves as trusted organizations.",
             "Never click on suspicious links or download attachments from unknown sources.",
