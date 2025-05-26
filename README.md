@@ -13,7 +13,7 @@ Continuous Integration: Automated build and test with GitHub Actions.
 
 - When prompted, enter your name.
 - Ask the bot about cybersecurity topics (e.g., "Tell me about password safety", "What is phishing?", "How do I browse safely?").
-- Type `exit` to end the conversation.
+- Type "exit" to end the conversation.
 
 ## Example Questions
 
@@ -21,10 +21,3 @@ Continuous Integration: Automated build and test with GitHub Actions.
 - How do I avoid scams?
 - Tell me about phishing.
 - How can I browse safely online?
-
-## Folder Structure
-
-- `CyberChatBox/` - Main source code
-- `.github/workflows/` - CI workflow files
-- `README.md` - Project documentation
-
